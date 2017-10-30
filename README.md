@@ -1,1 +1,1 @@
-# blogger
+# me following a tutorial on how to create a blogger app with rails
