@@ -4,6 +4,8 @@ class ArticlesController < ApplicationController
 		@articles = Article.all
 	end
 
+	before_action :require_login, except: [:show, :index]
+
 	def show
 		@article = Article.find(params[:id])
 		@comment = Comment.new
